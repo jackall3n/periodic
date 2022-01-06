@@ -1,16 +1,27 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    background: #111;
+    color: white;
+    font-family: 'Source Serif Pro', serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.bg {
+    background: #111;
 }
 
-* {
-  box-sizing: border-box;
+.elements {
+    @apply grid;
+
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.name {
+    font-size: 0.65rem;
+}
+
+.empty {
+    background: #111;
 }
