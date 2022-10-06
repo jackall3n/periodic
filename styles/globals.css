@@ -18,10 +18,54 @@ html {
     grid-template-columns: repeat(18, 1fr);
 }
 
+.elements button {
+    @apply block;
+}
+
 .name {
     font-size: 0.65rem;
 }
 
 .empty {
     background: #111;
+}
+
+.readme h1 {
+    @apply text-2xl pb-2;
+}
+
+.readme h2 {
+    @apply text-xl pb-2;
+}
+
+.readme h3 {
+    @apply text-lg pb-2;
+}
+
+.readme p {
+    @apply pb-4;
+}
+
+.readme code {
+    @apply py-0.5 px-1 text-sm bg-white/10 rounded-md;
+}
+
+.readme p code {
+    @apply text-sm bg-white/10 py-0.5 px-1 rounded-md;
+}
+
+.readme pre {
+    @apply text-sm bg-white/10 py-2 px-3 rounded-md mb-4 overflow-x-auto;
+}
+
+.readme pre code {
+    @apply bg-transparent py-0 px-1;
+}
+
+.readme a {
+    @apply text-sky-500 underline inline-block;
+}
+
+.readme ul li {
+    @apply list-disc ml-5 pb-2;
 }
