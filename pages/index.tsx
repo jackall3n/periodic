@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto pb-10">
         <h1
           className="text-2xl font-medium text-left py-10 text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-blue-600">
           <div>THE</div>
